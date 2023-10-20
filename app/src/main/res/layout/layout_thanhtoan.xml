@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ThanhToan_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_thanhtoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Thanh Toán"
+        app:titleTextColor="@color/white"
+        android:background="@color/backG"/>
+
+    <TextView
+        android:id="@+id/tv_thanhtoan_tongtien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:drawableLeft="@drawable/ic_money"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/backB"
+        android:text="20.000k"
+        android:textColor="#F60000"
+        android:textSize="20sp" />
+
+    <TextView
+            android:id="@+id/tv_thanhtoan_sdt"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0336004076"
+            android:textSize="20sp"
+            android:layout_gravity="right|center"
+            android:drawableLeft="@drawable/ic_numberphone"
+            android:drawableTint="@color/backB"
+            android:drawablePadding="20dp"
+            android:textColor="@color/backB"/>
+        <TextView
+            android:id="@+id/tv_thanhtoan_email"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="phattai@gmail.com"
+            android:textSize="20sp"
+            android:layout_gravity="right|center"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawableTint="@color/backB"
+            android:drawablePadding="20dp"
+            android:textColor="@color/backB"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <EditText
+                android:id="@+id/ed_thanhtoan_diachi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="right|center"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/backB"
+                android:hint="Nhập địa chỉ của bạn"
+                android:textSize="20dp"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_thanhtoan"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_full"
+            android:text="Thanh Toán"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/white">
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+</LinearLayout>

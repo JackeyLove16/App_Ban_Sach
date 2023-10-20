@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ShoppingCart_Activity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ShoppingCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Giỏ Hàng"
+        app:titleTextColor="@color/white"
+        android:background="@color/backG"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="7">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_ShoppingCart_thongbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giỏ hàng của bạn đang trống"
+                android:textColor="#555555"
+                android:textSize="24sp"
+                android:layout_gravity="center"/>
+            <ListView
+                android:dividerHeight="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/listview_ShoppingCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="#AE8F88" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng Tiền: "
+                    android:textSize="28sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:gravity="left|center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical">
+                <TextView
+                    android:id="@+id/tv_ShoppingCart_tonggia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá trị"
+                    android:textSize="28sp"
+                    android:textColor="#DF0A0A"
+                    android:paddingLeft="10sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bt_ShoppingCart_muangay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ccc"
+            android:text="MUA NGAY"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_ShoppingCart_TiepTuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiếp Tục Mua Hàng"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#ccc"/>
+    </LinearLayout>
+
+</LinearLayout>

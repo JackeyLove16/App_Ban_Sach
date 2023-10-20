@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TimKiem_Activity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_timkiem"
+        android:background="@color/backG"
+        app:titleTextColor="#fff"
+        app:title="Tìm kiếm"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+        <EditText
+            android:id="@+id/edt_timkiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nội Dung"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_timkiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#B8B8B8"
+        android:dividerHeight="2sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+</LinearLayout>

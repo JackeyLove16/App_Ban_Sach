@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Login_Activity"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_dangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Đăng Nhập"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/backG2"
+        android:fontFamily="@font/extrabold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:padding="7dp"
+        android:background="@drawable/border">
+        <EditText
+            android:id="@+id/edt_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/backG"
+            android:textColorHint="@color/backG3"
+            android:hint="Email"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawableTint="@color/backG"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="7dp"
+        android:background="@drawable/border">
+        <EditText
+            android:id="@+id/edt_login_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/backG"
+            android:textColorHint="@color/backG3"
+            android:hint="Pass"
+            android:drawableLeft="@drawable/ic_key"
+            android:drawableTint="@color/backG"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="12dp"
+        android:padding="7dp"
+        android:textColor="@color/white"
+        android:background="@drawable/border_full"
+        android:fontFamily="@font/semibold"
+        android:text="Đăng Nhập"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:padding="7dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nếu chưa có tài khoản hãy "
+            android:fontFamily="@font/regular"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/tv_dn_dk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/backG3"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</LinearLayout>

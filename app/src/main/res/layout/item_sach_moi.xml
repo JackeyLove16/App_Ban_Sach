@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="2dp"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|right"
+            android:cropToPadding="true"
+            android:src="@drawable/icon_new" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/itemsach_image"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/itemsach_tensach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sách"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemsach_tacgia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="tác giả"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:layout_marginTop="-2dp"/>
+
+            <TextView
+                android:id="@+id/itemsach_gia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Giá: 25000"
+                android:textColor="#DC1C1C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

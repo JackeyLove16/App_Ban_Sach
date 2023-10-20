@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Manager_Activity"
+    android:orientation="vertical"
+    tools:viewBindingIgnore="true">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_man"
+        android:background="@color/backG"
+        app:titleTextColor="#fff"
+        app:title="Tủ Sách Cũ"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/img_man_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center"
+            android:src="@drawable/ic_add"
+            android:layout_marginRight="10dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+
+        android:id="@+id/recyclerviewMan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

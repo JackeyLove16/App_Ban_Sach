@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Main_Activity"
+    android:fitsSystemWindows="true">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarmanhinhchinh"
+                android:background="#666666"
+                app:titleTextColor="#fff"
+                app:title="Trang Chủ"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp">
+
+
+                    <com.nex3z.notificationbadge.NotificationBadge
+                        android:id="@+id/menu_sl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right" />
+                    <ImageView
+                        android:id="@+id/img_main_menu"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_shopping_cart" />
+                </FrameLayout>
+                <ImageView
+                    android:id="@+id/img_main_search"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_search" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <ViewFlipper
+                android:id="@+id/viewflipper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#666666">
+                <TextView
+                    android:fontFamily="@font/mediumitalic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đầu sách mới nhất"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_margin="5dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+        <ListView
+            android:id="@+id/listviewmanhinhchinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

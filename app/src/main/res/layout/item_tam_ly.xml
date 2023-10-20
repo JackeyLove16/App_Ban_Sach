@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+    <!--CardViewgiống như FrameLayout, có bóng bo tròn hỗ trợ và hiệu ứng đổ bóng.
+    CardViewthường được sử dụng làm container cho các dòng trong ListViewand RecyclerView-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="#fff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/image_tamly"
+                android:layout_width="100sp"
+                android:layout_height="125sp"
+                android:adjustViewBounds="true"
+                android:layout_margin="2sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_tamly_ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên sách"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="5sp">
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tác giả:"
+                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tv_tamly_tacgia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nguyễn Văn A"
+                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:textStyle="normal"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp">
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="Giá:"
+                        android:textSize="14sp"
+                        android:textColor="#EE0014"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tv_tamly_gia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300.000 VND"
+                        android:textSize="14sp"
+                        android:textColor="#EE0014"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_tamly_mota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mô tả sách"
+                    android:textSize="14sp"
+                    android:textColor="#838282"
+                    android:textStyle="bold|italic"
+                    android:layout_marginStart="5sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
